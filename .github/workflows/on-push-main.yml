@@ -1,0 +1,9 @@
+name: main branch CI/CD
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    uses: ./.github/workflows/wf-deploy.yml
